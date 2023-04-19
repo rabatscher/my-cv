@@ -20,6 +20,7 @@ const AboutSection = () => {
         >
           <Image
             src={profilePic}
+            alt="profilepicture"
             className="object-cover h-full border-[5px] border-[#EBEBEB] -mt-4 -ml-1"
           />
         </motion.div>
