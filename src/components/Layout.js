@@ -19,7 +19,7 @@ const Layout = ({ children, className }) => {
         <div className="col-span-7 px-8">{children}</div>
 
         <div className="col-span-3">
-          <Image src={profilePic} />
+          <Image src={profilePic} alt="AltText" />
           <div className="bg-black">
             <h2 className="text-white font-bold uppercase text-2xl p-4">
               Pascal <br /> Rabatscher
