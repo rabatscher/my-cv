@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 
-const LiIcon = ({ reference }) => {
+const LiIcon = ({ referenz }) => {
   const { scrollYProgress } = useScroll({
-    target: reference,
+    target: referenz,
     offset: ["center end", "center center"],
   });
   return (
@@ -22,12 +22,7 @@ const LiIcon = ({ reference }) => {
           className="stroke-[#DDC11D] stroke-[7px] fill-none"
           style={{ pathLength: scrollYProgress }}
         />
-        <circle
-          cx="75"
-          cy="50"
-          r="9"
-          className="fill-[#ebebeb] stroke-0 fill-none"
-        />
+        <circle cx="75" cy="50" r="9" className="fill-[#ebebeb] stroke-0" />
       </svg>
     </figure>
   );

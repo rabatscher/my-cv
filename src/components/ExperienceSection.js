@@ -6,7 +6,7 @@ const Detail = ({ title, location, period, detail }) => {
   const ref = useRef(null);
   return (
     <li ref={ref} className="first:mt-0 mt-6">
-      <LiIcon reference={ref} />
+      <LiIcon referenz={ref} />
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
