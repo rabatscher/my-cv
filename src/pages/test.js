@@ -35,14 +35,7 @@ const test = () => {
       </div>
 
       <h2 className="text-4xl text-center py-8 font-bold">Animation</h2>
-      <div className="w-4/5 mx-auto text-center py-12">
-        <a
-          href="/"
-          className="bg-red-500 text-white py-4 px-8 rounded-full text-xl hover:bg-white hover:border-2 hover:border-red hover:text-red transition-color duration-1000 delay-500"
-        >
-          Click me!
-        </a>
-      </div>
+      <div className="w-4/5 mx-auto text-center py-12"></div>
 
       <h2 className="text-4xl text-center py-8 font-bold">Responsive</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -69,12 +62,9 @@ const test = () => {
           ["Projects", "/projects"],
           ["Reports", "/reports"],
         ].map(([title, url]) => (
-          <a
-            href={url}
-            className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900 "
-          >
-            {title}
-          </a>
+          <div className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900 ">
+            {url} here {title}
+          </div>
         ))}
       </div>
     </main>
