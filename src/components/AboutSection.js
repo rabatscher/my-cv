@@ -22,7 +22,7 @@ const AboutSection = () => {
             <Image
               src={profilePic}
               alt="profilepicture"
-              className="object-cover h-full md:max-w-20 border-[5px] border-[#EBEBEB] -mt-4 -ml-1 md:max-h-96"
+              className="object-cover h-full md:max-w-20 border-[5px] border-[#EBEBEB] -mt-4 -ml-1 md:max-h-96 border-l-0 border-t-0"
             />
           </motion.div>
         </AnimatePresence>
@@ -32,12 +32,14 @@ const AboutSection = () => {
           animate={{ x: [-20, 0], opacity: [0, 1] }}
           transition={{ duration: 0.6, delay: 1.6 }}
         >
-          <h2 className="text-3xl font-bold">About me</h2>
-          <p className="text-sm text-left mt-2 md:text-base">
+          <h2 className="text-3xl font-extrabold antialiased text-black/75  font-sans">
+            About me
+          </h2>
+          <p className="text-sm text-left mt-2 md:text-base font-body">
             Curious and ambitious individual with a sound scientific background
             in pharmaceutical sciences and immunology.
           </p>
-          <p className="text-sm text-left md:text-base">
+          <p className="text-sm text-left md:text-base font-body">
             Fascinated by the vast variety of challenges occurring during
             development and translation of new medicines and technologies.{" "}
           </p>

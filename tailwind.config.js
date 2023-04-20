@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   darkMode: "class",
   content: [
@@ -6,7 +7,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mont: ["var(--font-mont)", ...fontFamily.sans],
+        body: ["var(--font-source)", ...fontFamily.sans],
+      },
+    },
   },
   plugins: [],
 };
