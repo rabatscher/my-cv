@@ -21,16 +21,16 @@ const AboutSection = () => {
           <Image
             src={profilePic}
             alt="profilepicture"
-            className="object-cover h-full border-[5px] border-[#EBEBEB] -mt-4 -ml-1"
+            className="object-cover h-full md:max-w-20 border-[5px] border-[#EBEBEB] -mt-4 -ml-1 md:max-h-96"
           />
         </motion.div>
         <div className="w-full text-left p-3 ">
           <h2 className="text-3xl font-bold">About me</h2>
-          <p className="text-sm text-left mt-2">
+          <p className="text-sm text-left mt-2 md:text-base">
             Curious and ambitious individual with a sound scientific background
             in pharmaceutical sciences and immunology.
           </p>
-          <p className="text-sm text-left">
+          <p className="text-sm text-left md:text-base">
             Fascinated by the vast variety of challenges occurring during
             development and translation of new medicines and technologies.{" "}
           </p>

@@ -9,9 +9,10 @@ import ExperienceSection from "@/components/ExperienceSection";
 export default function Home() {
   return (
     <main>
-      <div className="w-full mx-auto md:w-3/4">
+      <div className="w-full mx-auto md:w-3/5">
         <Logo />
         <AboutSection />
+
         <ExperienceSection />
         <div className="h-96"></div>
         <div className="h-96"></div>
