@@ -26,10 +26,7 @@ const Detail = ({ title, location, period, detail, address, url }) => {
             target="_blank"
             className="hover:text-[#DDC11D] font-medium"
           >
-            <span className="flex relative">
-              @ {location}{" "}
-              <LinkArrow className={"ml-1 w-[14px] relative -top-0.5"} />
-            </span>
+            <span className="flex relative">@ {location} </span>
           </Link>
           <span>{address}</span>
         </span>
