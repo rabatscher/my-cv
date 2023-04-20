@@ -1,9 +1,12 @@
 import { AnimatePresence, motion, useScroll } from "framer-motion";
 import { React, useRef } from "react";
+import { useTranslation } from "react-i18next";
+
 const Logo = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      {/* <div className=""> */}
       <div className="flex flex-nowrap justify-center my-4 ">
         <motion.div
           className="w-20 h-20 bg-[#DDC11D] text-right pr-1 text-3xl text-[#EBEBEB] font-semibold"
@@ -58,7 +61,9 @@ const Logo = () => {
           ease: [0.6, 0.01, 0.05, 0.95],
         }}
       >
-        PhD | Immunologist | Pharmacist
+        {/* PhD | Immunologist | Pharmacist
+        <br /> */}
+        {t("subtitle")}
       </motion.div>
       {/* </div> */}
     </>

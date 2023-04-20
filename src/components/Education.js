@@ -3,6 +3,7 @@ import LiIcon from "./LiIcon";
 import { motion, useScroll } from "framer-motion";
 import { LinkArrow } from "./Icons";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const Detail = ({ title, location, period, detail, url, address }) => {
   const ref = useRef(null);
@@ -39,6 +40,8 @@ const Detail = ({ title, location, period, detail, url, address }) => {
 };
 
 const Education = () => {
+  const { t } = useTranslation();
+
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -46,48 +49,48 @@ const Education = () => {
   });
   return (
     <div className="mt-8 bg-[#DADADA]">
-      <h2 className="text-2xl font-extrabold text-center pt-8 text-black/75  font-sans">
-        Academic Education
+      <h2 className="text-3xl font-extrabold text-center pt-8 text-black/75  font-sans">
+        {t("educationTitle")}
       </h2>
       <div ref={ref} className="w-4/5  mx-auto relative mt-4 ">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute -left-2 -top-[80px] w-[4px] h-[112%] bg-[#EBEBEB] origin-top border-0 border-red-500"
+          className="absolute -left-2 -top-[83px] w-[4px] h-[112%] bg-[#EBEBEB] origin-top border-0 border-red-500"
         ></motion.div>
         <ul className="w-full flex flex-col items-start justify-between ml-4 pb-8">
           <Detail
-            title="PhD"
-            location="University of Basel"
-            address="Basel, Switzerland"
+            title={t("educationSub1")}
+            period={t("educationDate1")}
+            location={t("educationLocation1")}
+            address={t("educationAddress1")}
             url="https://www.unibas.ch/en.html"
-            period="Oct 2017 - Sept 2022"
-            detail="Immunological consequences of C1q and anti-C1q immune complexes in secondary inflammation."
+            detail={t("educationDetail1")}
           />
           <Detail
-            title="Swiss Federal Exam | Pharmacist"
-            location="ETH Zurich"
-            address="Zurich, Switzerland"
+            title={t("educationSub2")}
+            period={t("educationDate2")}
+            location={t("educationLocation2")}
+            address={t("educationAddress2")}
             url="https://www.ethz.ch"
-            period="Sept 2016"
-            detail="Investigating the mechanisms involved in the autoimmune disease systemic lupus erythematodes and the effect of anti-C1q autoantibodies on immune cells."
-          />
-
-          <Detail
-            title="MSc in Pharmaceutical Sciences"
-            period="Sept 2014 - Aug 2016"
-            location="ETH Zurich"
-            address="Zurich, Switzerland"
-            url="https://www.ethz.ch"
-            detail="Investigation of secondary structure content of designer peptides."
+            detail={t("educationDetail2")}
           />
 
           <Detail
-            title="BSc in Pharmaceutical Sciences"
-            location="ETH Zurich"
-            address="Zurich, Switzerland"
+            title={t("educationSub3")}
+            period={t("educationDate3")}
+            location={t("educationLocation3")}
+            address={t("educationAddress3")}
             url="https://www.ethz.ch"
-            period="Sept 2010 - Aug 2014"
-            detail=""
+            detail={t("educationDetail3")}
+          />
+
+          <Detail
+            title={t("educationSub4")}
+            period={t("educationDate4")}
+            location={t("educationLocation4")}
+            address={t("educationAddress4")}
+            url="https://www.ethz.ch"
+            detail={t("educationDetail4")}
           />
         </ul>
       </div>

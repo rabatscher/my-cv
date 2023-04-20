@@ -2,8 +2,11 @@ import Image from "next/image";
 import React from "react";
 import profilePic from "../../public/images/profile/profilePic3bw.jpg";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <motion.div
@@ -33,15 +36,13 @@ const AboutSection = () => {
           transition={{ duration: 0.6, delay: 1.6 }}
         >
           <h2 className="text-3xl font-extrabold antialiased text-black/75  font-sans">
-            About me
+            {t("aboutmeTitle")}
           </h2>
           <p className="text-sm text-left mt-2 md:text-base font-body">
-            Curious and ambitious individual with a sound scientific background
-            in pharmaceutical sciences and immunology.
+            {t("aboutmePart1")}
           </p>
           <p className="text-sm text-left md:text-base font-body">
-            Fascinated by the vast variety of challenges occurring during
-            development and translation of new medicines and technologies.{" "}
+            {t("aboutmePart2")}
           </p>
         </motion.div>
       </motion.div>
