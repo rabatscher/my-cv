@@ -29,15 +29,19 @@ const Experience = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"],
+    offset: ["center end", "center start"],
   });
   return (
-    <div className="mt-8">
+    <motion.div
+      className="mt-8"
+      animate={{ opacity: [0, 1] }}
+      transition={{ delay: 1.6, duration: 0.4 }}
+    >
       <h2 className="text-3xl font-bold text-center">Experience</h2>
       <div ref={ref} className="w-4/5  mx-auto relative mt-4 ">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute -left-2 top-0 w-[4px] h-full bg-[#DADADA] origin-top"
+          className="absolute -left-2 top-0 w-[4px] h-[104%] bg-[#DADADA] origin-top"
         ></motion.div>
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Detail
@@ -81,7 +85,7 @@ const Experience = () => {
           />
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

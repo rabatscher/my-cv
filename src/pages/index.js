@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Logo from "@/components/Logo";
 import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import Education from "@/components/Education";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutSection />
 
         <ExperienceSection />
+        <Education />
         <div className="h-96"></div>
         <div className="h-96"></div>
       </div>
