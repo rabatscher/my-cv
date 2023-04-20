@@ -25,7 +25,7 @@ const AboutSection = () => {
             <Image
               src={profilePic}
               alt="profilepicture"
-              className="object-cover h-full md:max-w-20 border-[5px] border-[#EBEBEB] -mt-4 -ml-1 md:max-h-96 border-l-0 border-t-0"
+              className="object-cover object-top h-full md:max-w-20 border-[5px] border-[#EBEBEB] -mt-4 -ml-1 md:max-h-96 border-l-0 border-t-0"
             />
           </motion.div>
         </AnimatePresence>
