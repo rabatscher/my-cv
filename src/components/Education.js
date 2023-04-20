@@ -28,7 +28,7 @@ const Detail = ({ title, location, period, detail, url, address }) => {
           >
             <span className="flex relative">
               @ {location}{" "}
-              <LinkArrow className={"ml-1 w-4 h-4 relative -top-0.5"} />
+              <LinkArrow className={"ml-1 w-[14px] relative -top-0.5"} />
             </span>
           </Link>
           <span>{address}</span>
