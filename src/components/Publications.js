@@ -10,7 +10,7 @@ const Publications = () => {
       <h2 className="text-3xl font-extrabold text-center pt-8 text-black/75">
         Publications
       </h2>
-      <div className="flex gap-4 mt-4 justify-end flex-col">
+      <div className="flex gap-4 m-4 justify-end flex-row flex-col">
         <PubList
           title="Anti-C1q autoantibodies from systemic lupus erythematosus patients
             enhance CD40-CD154-mediated inflammation in peripheral blood
@@ -62,7 +62,7 @@ function PubList({ title, authors, year, journal, url, abstract }) {
     closed: { opacity: 0, height: "1px", display: "none" },
   };
   return (
-    <motion.div className="border-2 border-black/50 items-center p-4 hover:bg-[#DADADA]/50 ">
+    <motion.div className="border-2 border-black/50 items-center p-4 hover:bg-[#DADADA]/50 grow-1 ">
       <h3 className="text-xl font-semibold  font-sans">{title}</h3>
       <h4 className="text-sm font-thin text-left font-body items-center">
         {authors}
