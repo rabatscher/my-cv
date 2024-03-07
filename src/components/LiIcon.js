@@ -20,7 +20,7 @@ const LiIcon = ({ referenz, color }) => {
           cx="75"
           cy="50"
           r="13"
-          className="stroke-[#DDC11D] stroke-[7px] fill-none"
+          className="stroke-[#2f3c65] stroke-[7px] fill-none"
           style={{ pathLength: scrollYProgress }}
         />
         <circle cx="75" cy="50" r="9" className={`stroke-0 fill-[#EBEBEB]`} />

@@ -9,7 +9,7 @@ const Logo = () => {
     <>
       <div className="flex flex-nowrap justify-center my-4 ">
         <motion.div
-          className="w-20 h-20 bg-[#DDC11D] text-right pr-1 text-3xl text-[#EBEBEB] font-semibold"
+          className="w-20 h-20 bg-[#2f3c65] text-right pr-1 text-3xl text-[#EBEBEB] font-semibold"
           animate={{
             scale: [1, 1.4, 1.4, 1, 1],
             rotate: [0, 0, 270, 270, 0],

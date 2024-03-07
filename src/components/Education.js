@@ -25,7 +25,7 @@ const Detail = ({ title, location, period, detail, url, address }) => {
           <Link
             href={url}
             target="_blank"
-            className="hover:text-[#DDC11D] font-medium"
+            className="hover:text-[#2f3c65] font-medium"
           >
             <span className="flex relative">@ {location} </span>
           </Link>
