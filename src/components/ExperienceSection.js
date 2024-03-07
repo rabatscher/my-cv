@@ -63,6 +63,13 @@ const Experience = () => {
           className="absolute -left-2 top-0 w-[4px] h-[105%] bg-[#DADADA] origin-top"
         ></motion.div>
         <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <Detail
+            title={t("experienceSub0")}
+            period={t("experienceDate0")}
+            location={t("experienceLocation0")}
+            url=""
+            detail={t("experienceDetail0")}
+          />
           <Detail
             title={t("experienceSub1")}
             period={t("experienceDate1")}
